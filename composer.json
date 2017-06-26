@@ -1,0 +1,19 @@
+{
+    "name": "mpociot/cisco-spark-demo",
+    "description": "BotMan + Cisco Spark demo",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marcel Pociot",
+            "email": "m.pociot@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "botman/driver-cisco-spark": "dev-master",
+        "vlucas/phpdotenv": "^2.4",
+        "doctrine/cache": "^1.6"
+    }
+}
