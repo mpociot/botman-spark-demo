@@ -17,6 +17,10 @@ $dotenv->load();
 // Explicitly load Cisco Spark driver
 DriverManager::loadDriver(CiscoSparkDriver::class);
 
+$cache = __DIR__ . '/cache/';
+if (!is_dir($cache)) {
+	mkdir($cache, 0777);
+}
 $cacheDriver = new FilesystemCache('cache');
 
 $botman = BotManFactory::create([
