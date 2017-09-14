@@ -1,5 +1,8 @@
 {
     "name": "mpociot/cisco-spark-demo",
+    "platform": {
+        "php": "7.0"
+    },
     "description": "BotMan + Cisco Spark demo",
     "type": "project",
     "license": "MIT",
@@ -18,6 +21,10 @@
     },
     "scripts": {
       "post-install-cmd": [
+            "mkdir cache",
+            "sudo chown 777 cache"
+        ],
+      "post-update-cmd": [
             "mkdir cache",
             "sudo chown 777 cache"
         ]
