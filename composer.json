@@ -12,8 +12,14 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "botman/driver-cisco-spark": "dev-master",
+        "botman/driver-cisco-spark": "~1.0",
         "vlucas/phpdotenv": "^2.4",
         "doctrine/cache": "^1.6"
+    },
+    "scripts": {
+      "post-install-cmd": [
+            "mkdir cache",
+            "sudo chown 777 cache"
+        ]
     }
 }
