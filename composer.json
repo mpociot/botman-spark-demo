@@ -22,11 +22,11 @@
     "scripts": {
       "post-install-cmd": [
             "mkdir cache",
-            "sudo chown 777 cache"
+            "sudo chmod 777 cache"
         ],
       "post-update-cmd": [
             "mkdir cache",
-            "sudo chown 777 cache"
+            "sudo chmod 777 cache"
         ]
     }
 }
