@@ -31,7 +31,7 @@ $botman = BotManFactory::create([
 
 // Simple examples
 $botman->hears('Spark is great', function($bot) {
-	$bot->reply('We now that already! 🤗');
+	$bot->reply('We know that already! 🤗');
 });
 
 $botman->hears('What about markdown', function($bot) {
